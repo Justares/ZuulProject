@@ -19,6 +19,7 @@ public class WorldGenerator {
         kellerDerTaverne = new Raum("im Keller der Taverne");
         geheimgang = new Raum("in einem schmalen modrigen Geheimgang");
         taverneErsterStock=new Raum("bei den den G�stezimmern im ersten Stock der Taverne");
+        
     }
 
     private void setzeAusgaenge() {
