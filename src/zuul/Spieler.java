@@ -7,10 +7,13 @@ public class Spieler {
     private Raum aktuellerRaum;
     private int tragkraft;
     private ArrayList<Gegenstand> gegenstaende;
+    private int kontostand;
+
 
     public Spieler() {
         this.gegenstaende=new ArrayList<>();
         this.tragkraft = 30;
+        this.kontostand = 0;
     }
 
     public int ermittleGewicht() {
@@ -52,7 +55,7 @@ public class Spieler {
                 this.gegenstaende.add(gesucht);
                 this.aktuellerRaum.entferneGegenstand(gesucht);
                 return true;
-            } else {
+            } else { 
                 return false;
             }
         }
@@ -103,6 +106,10 @@ public class Spieler {
             }
         }
     }
+    public void coin(ZuulCoin coin) {
+    	
+    }
+    
 
     public void sleep() {
 
