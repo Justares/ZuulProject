@@ -1,10 +1,10 @@
 package zuul;
 
-public class zuulCoin extends Gegenstand{
+public class ZuulCoin extends Gegenstand{
 
     private int menge;
 
-    public zuulCoin(String name, String beschreibung, int gewicht, int menge) {
+    public ZuulCoin(String name, String beschreibung, int gewicht, int menge) {
 
         super(name, beschreibung, gewicht);
         this.menge=menge;
