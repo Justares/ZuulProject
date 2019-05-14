@@ -84,6 +84,11 @@ public class Spieler {
         erg+=this.tragkraft-ermittleGewicht() + "kg kann ich noch tragen!";
         return erg;
     }
+    public String zeigeKontostand() {
+    	
+    	return null;
+    	
+    }
 
     public void geheZu(Raum raum) {
         this.aktuellerRaum=raum;
