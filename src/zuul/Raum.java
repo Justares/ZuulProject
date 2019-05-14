@@ -15,7 +15,7 @@ package zuul;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Raum
+public class Raum extends Casino
 {
     private String beschreibung;
     private HashMap<String, Raum> ausgaenge;

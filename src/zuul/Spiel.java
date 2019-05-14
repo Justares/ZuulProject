@@ -27,6 +27,7 @@ public class Spiel
     private Parser parser;
     private Spieler spieler;
     private HashMap<String, CommandFunction> commands;
+    private Casino casino;
     private boolean beendet;
 
     /**
@@ -36,6 +37,7 @@ public class Spiel
     {
         this.beendet=false;
         this.spieler=new Spieler();
+        this.casino=new Casino();
         raeumeAnlegen();
         parser = new Parser();
         this.commands=new HashMap<>();
@@ -49,6 +51,7 @@ public class Spiel
         this.commands.put("eat", new EatCommand(this.spieler));
         this.commands.put("quit", new QuitCommand(this));
         this.commands.put("sleep", new SleepCommand(this.spieler));
+        this.commands.put("casino", new CasinoCommand(this.casino));
     }
 
     private void raeumeAnlegen()
