@@ -66,7 +66,7 @@ public class WorldGenerator {
         waldstueck.gegenstandAblegen(new Essen("Pilz", "ein seltsam aussehender Pilz", 1, 20));
         lichtung.gegenstandAblegen(new Gegenstand("Korb", "ein Weidenkorb gef√ºllt mit Brot", 4));
         lichtung.gegenstandAblegen(new Essen("Muffin", "lecker lecker", 1, 5));
-        
+        taverne.gegenstandAblegen(new ZuulCoin("Start Coin","Gl‰nzt ein bisschen", 10, 0.7));
     }
 
     public Raum getStartRaum() {
